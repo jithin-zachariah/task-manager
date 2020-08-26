@@ -6,6 +6,10 @@ const auth = require('../middleware/auth')
 const { sendWelcomeEmail, sendCancelationEmail } = require('../emails/account')
 const router = new express.Router()
 
+router.get('/jenkins',async(req,res)=>{
+    res.send('Helo from jenkins')
+})
+
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
 
