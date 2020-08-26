@@ -8,7 +8,7 @@ module.exports = {
         sgMail.send({
             to: email,
             from: 'andrew@mead.io',
-            subject: 'Thanks for joining in!',
+            subject: 'Thanks for joining innn!',
             text: `Welcome to the app, ${name}. Let me know how you get along with the app.`
         })
     }
